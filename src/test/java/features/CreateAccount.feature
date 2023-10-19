@@ -1,3 +1,4 @@
+@Regression
 Feature: Create Account Testing
 
 #  Story 9) Activity
@@ -6,7 +7,7 @@ Feature: Create Account Testing
 #  Validate response is 201
 #  And validate response contain correct email entity
   Background: Setup test
-    Given url "https://qa.insurance-api.tekschool-students.com"
+    Given url BASE_URL
     * def tokenResult = callonce read('GenerateToken.feature')
     * def token = "Bearer " + tokenResult.response.token
 

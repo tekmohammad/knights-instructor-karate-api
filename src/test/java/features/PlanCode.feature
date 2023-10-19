@@ -1,7 +1,8 @@
+@Regression
 Feature: Plan Code Testing
 
   Background: Setup test
-    Given url "https://qa.insurance-api.tekschool-students.com"
+    Given url BASE_URL
 
   Scenario: Validate /api/plans/get-all-plan-code
     Given path "/api/token"

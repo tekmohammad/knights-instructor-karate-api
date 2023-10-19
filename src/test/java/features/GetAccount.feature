@@ -1,7 +1,8 @@
+@Regression
 Feature: Get Account Feature Testing
 
   Background: Setup test
-    Given url "https://qa.insurance-api.tekschool-students.com"
+    Given url BASE_URL
     * def tokenResult = callonce read('GenerateToken.feature')
     And print tokenResult
     * def validToken = "Bearer " + tokenResult.response.token

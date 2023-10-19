@@ -1,7 +1,8 @@
+@Regression
 Feature: Security token verify API calls
 
   Background: Setup tests
-    Given url "https://qa.insurance-api.tekschool-students.com"
+    Given url BASE_URL
   Scenario: Send valid request to /api/token/verify
     And path "/api/token"
     And request {"username": "supervisor","password": "tek_supervisor"}
