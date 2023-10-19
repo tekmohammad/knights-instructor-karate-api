@@ -38,6 +38,9 @@ Feature: Create Account Testing
     And print response
     And match response contains {"message" :  "Account Successfully deleted" , "status" :  true}
 
+    #Create Account
+    #Send same request again
+    #Delete Account
   Scenario: Create account with existing email /api/accounts/add-primary-account validate response
     Given path "/api/accounts/add-primary-account"
     * def email = "mohammad_instructor123455@tekschool.us"
